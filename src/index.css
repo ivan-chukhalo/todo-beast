@@ -1,0 +1,260 @@
+/* *,
+*::before,
+*::after{} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(57, 112, 151);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid black; */
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.App {
+  width: 100%;
+  max-width: 25rem;
+  box-shadow: 0px 0px 31px -17px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 35px 60px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.app-name {
+  margin-top: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  margin-bottom: 5px;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.form__submit {
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: rgb(57, 112, 151);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  border: none;
+  font-weight: bold;
+}
+
+.form__submit:active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.filters__btn {
+  flex: 0 1 30%;
+  line-height: 2rem;
+  background-color: #fff;
+  color: #000;
+  border-color: transparent;
+  color: rgb(57, 112, 151);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filters__btn:active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.tasks__header {
+  margin: 0 auto;
+}
+
+.tasks__list {
+  text-align: left;
+}
+
+.task {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #fff;
+  padding: 15px 0 5px;
+  height: 26px;
+}
+
+.task__checkbox {
+  height: 20px;
+  width: 20px;
+  margin-left: 0;
+  border: none;
+}
+
+.task__description {
+  font-size: 1.25rem;
+  overflow: hidden;
+}
+
+.task__buttons-group {
+  display: flex;
+  justify-content: space-between;
+  /* flex: 0 1 100%; */
+  flex-basis: 50px;
+  margin-left: auto;
+}
+
+.task__btn {
+  flex: 0 1 49%;
+  font-size: 0.9rem;
+  /* line-height: 2rem; */
+  /* font-size: 35px; */
+  flex: 0 1 49%;
+  color: rgb(57, 112, 151);
+  font-weight: bold;
+  flex-basis: 24px;
+  height: 24px;
+  background-color: #fff;
+
+}
+
+@media (max-width: 768px) {
+  .app-name {
+    margin-bottom: 0;
+  }
+
+  .App {
+    max-width: 21rem;
+    padding: 25px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .App {
+    max-width: 14rem;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  button, input{
+    font-size: 1rem;
+  }
+
+  .form__submit,
+  .from__input,
+  .filters__btn,
+  .task__btn,
+  .task__description{
+    font-size: 1rem;
+  }
+
+.form__header,
+.tasks__header{
+  font-size: 1.25rem;
+}
+
+  .form__header {
+    margin-top: 5px;
+  }
+}
+
+.editing__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+
+.editing__input{
+  box-sizing: border-box;
+  flex-grow: 1;
+  height: 26px;
+  border: none;
+}
+
+.editing__btn-group{
+  margin-left: auto;
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  outline: none;
+}
+
+.editing__btn{
+  font-size: 0.9rem;
+  flex: 0 1 49%;
+  color: rgb(57, 112, 151);
+  font-weight: bold;
+  flex-basis: 24px;
+  height: 24px;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 320px){
+  .task__buttons-group {
+    flex-direction: column;
+  }
+} */
